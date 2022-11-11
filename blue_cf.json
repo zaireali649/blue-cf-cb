@@ -1,0 +1,21 @@
+{
+    "Resources": {
+        "S3Bucket001": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+            }
+        },
+		"S3Bucket002": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+            }
+        },
+		"EC2instance001" : {
+		   "Type" : "AWS::EC2::Instance",
+		   "Properties" : {
+			  "ImageId" : "ami-09d3b3274b6c5d4aa",
+			  "InstanceType" : "t2.micro"			  
+		   }
+		}
+    }
+}
