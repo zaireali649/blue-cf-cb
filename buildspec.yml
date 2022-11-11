@@ -1,0 +1,8 @@
+# buildspec.yml
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo run aws cli
+      - aws cloudformation create-stack --stack-name myteststack --template-body file://blue_cf.json
